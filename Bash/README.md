@@ -17,3 +17,4 @@ Result will be:
 foo.mp3|bar.txt|baz.mp3
 thud.mp3
 ```
+Solution: [Exercise 1](exercise-1.sh)
