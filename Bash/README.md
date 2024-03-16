@@ -1,5 +1,5 @@
 # List of exercises
-## 1. 
+## Exercise 1
 You need to show only files that don't repeat the filename, so you ignore extension.
 
 For example:
@@ -18,3 +18,16 @@ foo.mp3|bar.txt|baz.mp3
 thud.mp3
 ```
 Solution: [Exercise 1](exercise-1.sh)
+
+
+## Exercise 2
+
+Complete the function/method so that it returns the url with anything after the anchor (#) removed.
+
+Examples:
+```
+"www.example.com#about" --> "www.example.com"
+"www.example.com?page=1" -->"www.example.com?page=1"
+```
+
+Solution: [Exercise 2](exercise-2.sh)
