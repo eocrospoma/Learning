@@ -29,7 +29,8 @@ stock_list() {
      $1 ~ second {sumSecond+=$2} \
      $1 ~ third {sumThird+=$2} \
      $1 ~ fourth {sumFourth+=$2} \
-     END { sub(/\^/,"",first) sub(/\^/,"",second) sub(/\^/,"",third) sub(/\^/,"",fourth) ; print "(" first " : " (sumFirst=="" ? "0" : sumFirst)") - (" second " : " (sumSecond=="" ? "0" : sumSecond)") - (" third " : " (sumThird=="" ? "0" : sumThird) ") - (" fourth " : " (sumFourth=="" ? "0" : sumFourth) ")"  }'
+     END { print "( " sub("^","",first) " : " (sumFirst=="" ? "0" : sumFirst)" ) -" }'
 }
 
 stock_list "$books" "$categories"
+     #END { print "(A :"sumFirst")","- (B : "sumSecond")","- (C : "sumThird")","- (D :"sumFourth")"}'
